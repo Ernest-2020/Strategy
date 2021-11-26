@@ -2731,6 +2731,11 @@ GameObject:
   m_Component:
   - component: {fileID: 439958643931557685}
   - component: {fileID: 1337798590572911418}
+  - component: {fileID: 8148101767317637681}
+  - component: {fileID: 7066607365066671630}
+  - component: {fileID: 6143380519436739933}
+  - component: {fileID: 7090322790545034359}
+  - component: {fileID: 5886979572245129692}
   m_Layer: 0
   m_Name: Chomper
   m_TagString: Untagged
@@ -2773,6 +2778,68 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8148101767317637681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7820547215073884840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb85632560f9d1469087ab4b0e37d94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _icon: {fileID: 21300000, guid: dc98a28d01f02d14080334184a7c266f, type: 3}
+--- !u!114 &7066607365066671630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7820547215073884840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 727bd0d0234373b4eb79d7f9f1ee404e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6143380519436739933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7820547215073884840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c7e92a25bf93cf4a896c2fa28ceb095, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7090322790545034359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7820547215073884840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8562c095d50eaa6499ddf73944a389e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5886979572245129692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7820547215073884840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e16d6d2f0d0f84f8c234beee32d145, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7852821811371597857
 GameObject:
   m_ObjectHideFlags: 0
