@@ -2,21 +2,19 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class MouseInteractionsPresenter : MonoBehaviour
+
+public sealed class MouseInteractionPresenter : MonoBehaviour
 {
-    [SerializeField] private EventSystem _eventSystem;
     [SerializeField] private Camera _camera;
     [SerializeField] private SelectableValue _selectedObject;
+    [SerializeField] private EventSystem _eventSystem;
 
     [SerializeField] private Vector3Value _groundClicksRMB;
     [SerializeField] private Transform _groundTransform;
 
     private Plane _groundPlane;
 
-    private void Start()
-    {
-        _groundPlane = new Plane(_groundTransform.up, 0);
-    }
+    private void Start() => _groundPlane = new Plane(_groundTransform.up, 0);
 
     private void Update()
     {
@@ -38,8 +36,7 @@ public class MouseInteractionsPresenter : MonoBehaviour
             }
             var selectable = hits
                 .Select(hit => hit.collider.GetComponentInParent<ISelectable>())
-                .Where(c => c != null)
-                .FirstOrDefault();
+                .FirstOrDefault(c => c != null);
             _selectedObject.SetValue(selectable);
         }
         else

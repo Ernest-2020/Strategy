@@ -14,5 +14,6 @@ public class MainUnit : MonoBehaviour, ISelectable
     private float _maxHealth = 100;
     [SerializeField]
     private Sprite _icon;
+    [SerializeField]
     private float _health;
 }

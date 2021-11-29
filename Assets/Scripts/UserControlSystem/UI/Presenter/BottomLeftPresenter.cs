@@ -16,7 +16,7 @@ namespace UserControlSystem
 
         private void Start()
         {
-            _selectedValue.OnNewValue += ONSelected;
+            _selectedValue.OnSelected += ONSelected;
             ONSelected(_selectedValue.CurrentValue);
         }
 

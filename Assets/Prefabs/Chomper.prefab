@@ -2876,6 +2876,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   _icon: {fileID: 21300000, guid: dc98a28d01f02d14080334184a7c266f, type: 3}
+  _health: 100
 --- !u!114 &7066607365066671630
 MonoBehaviour:
   m_ObjectHideFlags: 0
