@@ -16,7 +16,7 @@ public sealed class MainBuilding : CommandExecutorBase<IProduceUnitCommand>, ISe
     public override void ExecuteSpecificCommand(IProduceUnitCommand command)
     {
         Instantiate(command.UnitPrefab,
-                new Vector3(Random.Range(-10, 10), 0, Random.Range(-10, 10)),
+                new Vector3(Random.Range(-15, 13.7f), 5.255707f, Random.Range(-28, -9.5f)),
                 Quaternion.identity,
                 _unitsParent);
     }
