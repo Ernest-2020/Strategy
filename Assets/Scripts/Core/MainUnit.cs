@@ -1,18 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class MainUnit : MonoBehaviour, ISelectable
+namespace Core
 {
-    public float Health => _health;
+    public class MainUnit : MonoBehaviour, ISelectable, IAttackable
+    {
+        public float Health => _health;
+        public float MaxHealth => _maxHealth;
+        public Transform PivotPoint => _pivotPoint;
+        public Sprite Icon => _icon;
 
-    public float MaxHealth => _maxHealth;
+        [SerializeField] private float _maxHealth = 100;
+        [SerializeField] private Sprite _icon;
+        [SerializeField] private Transform _pivotPoint;
 
-    public Sprite Icon => _icon;
-
-    [SerializeField]
-    private float _maxHealth = 100;
-    [SerializeField]
-    private Sprite _icon;
-    private float _health;
+        private float _health = 100;
+    }
 }

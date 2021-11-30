@@ -1445,7 +1445,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _selectable: {fileID: 11400000, guid: ff65f75134ec34146bfb9b4f4f1f673c, type: 2}
   _view: {fileID: 3168402026729623513}
-  _context: {fileID: 11400000, guid: e52a5228e5b027647ad01e159abe79ff, type: 2}
 --- !u!1 &5122495238456850508
 GameObject:
   m_ObjectHideFlags: 0
@@ -1457,6 +1456,7 @@ GameObject:
   - component: {fileID: 5122495238456850481}
   - component: {fileID: 5122495238456850510}
   - component: {fileID: 5122495238456850511}
+  - component: {fileID: 1566322562469125841}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -1522,6 +1522,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1566322562469125841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5122495238456850508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1f30df376664a544990fdc1baf7f0af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5419037238527199299
 GameObject:
   m_ObjectHideFlags: 0
