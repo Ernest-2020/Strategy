@@ -1342,10 +1342,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcb510f9c1368b740862f4ef49b27b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _eventSystem: {fileID: 1337983356}
   _camera: {fileID: 963194227}
   _selectedObject: {fileID: 11400000, guid: ff65f75134ec34146bfb9b4f4f1f673c, type: 2}
-  _eventSystem: {fileID: 1337983356}
   _groundClicksRMB: {fileID: 11400000, guid: 6277af9e4e84db74ca3a357961df6781, type: 2}
+  _attackablesRMB: {fileID: 11400000, guid: 5c5742580e67b6348b8324e8bed300c5, type: 2}
   _groundTransform: {fileID: 1801311820}
 --- !u!4 &752754325
 Transform:
@@ -2249,6 +2250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _legacyContext: {fileID: 11400000, guid: e52a5228e5b027647ad01e159abe79ff, type: 2}
   _vector3Value: {fileID: 11400000, guid: 6277af9e4e84db74ca3a357961df6781, type: 2}
+  _attackableValue: {fileID: 11400000, guid: 5c5742580e67b6348b8324e8bed300c5, type: 2}
 --- !u!1001 &1519356649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2847,6 +2849,7 @@ MonoBehaviour:
   _unitsParent: {fileID: 0}
   _maxHealth: 1000
   _icon: {fileID: 21300000, guid: 99533d65a15f6c247acc643e908698ba, type: 3}
+  _pivotPoint: {fileID: 0}
 --- !u!114 &2007713951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2945,6 +2948,10 @@ PrefabInstance:
       propertyPath: _icon
       value: 
       objectReference: {fileID: 21300000, guid: e33c3fc7cebb08840b4489d3b414cff2, type: 3}
+    - target: {fileID: 6487226038806808958, guid: 9819377ae5ebdad4680676cf2bfced70, type: 3}
+      propertyPath: _pivotPoint
+      value: 
+      objectReference: {fileID: 1146877131}
     - target: {fileID: 6487226038806808958, guid: 9819377ae5ebdad4680676cf2bfced70, type: 3}
       propertyPath: _unitsParent
       value: 
@@ -3103,6 +3110,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chomper
       objectReference: {fileID: 0}
+    - target: {fileID: 8148101767317637681, guid: 2649a746de0e3a04a94f7de48211544f, type: 3}
+      propertyPath: _pivotPoint
+      value: 
+      objectReference: {fileID: 1505110547}
     m_RemovedComponents:
     - {fileID: 1337798590572911418, guid: 2649a746de0e3a04a94f7de48211544f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2649a746de0e3a04a94f7de48211544f, type: 3}
