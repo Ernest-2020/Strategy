@@ -1,6 +1,6 @@
 using Zenject;
 
-public class UIModelInstaller : MonoInstaller
+public class UiModelInstaller : MonoInstaller
 {
     public override void InstallBindings()
     {
