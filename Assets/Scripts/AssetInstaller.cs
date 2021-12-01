@@ -10,7 +10,10 @@ public class AssetInstaller : ScriptableObjectInstaller<AssetInstaller>
     [SerializeField] private SelectableValue _selectables;
     public override void InstallBindings()
     {
-        Container.BindInstances(_legacyContext, _groundClicksRMB, _attackableClicksRMB, _selectables);
-
+        Container.Bind<IAwaitable<IAttackable>>()
+            .FromInstance(_attackableClicksRMB);
+        Container.Bind<IAwaitable<Vector3>>()
+            .FromInstance(_groundClicksRMB);
+        Container.BindInstances(_legacyContext, _selectables);
     }
 }

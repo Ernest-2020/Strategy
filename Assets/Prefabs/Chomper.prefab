@@ -2811,7 +2811,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 439958643931557685}
-  - component: {fileID: 1337798590572911418}
+  - component: {fileID: 5406312040014469647}
   - component: {fileID: 8148101767317637681}
   - component: {fileID: 7066607365066671630}
   - component: {fileID: 6143380519436739933}
@@ -2819,6 +2819,8 @@ GameObject:
   - component: {fileID: 5886979572245129692}
   - component: {fileID: 5395171713588225311}
   - component: {fileID: 2980719104521286049}
+  - component: {fileID: 7965128945968154032}
+  - component: {fileID: 1724773880892673400}
   m_Layer: 0
   m_Name: Chomper
   m_TagString: Untagged
@@ -2843,7 +2845,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1337798590572911418
+--- !u!95 &5406312040014469647
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -2853,7 +2855,7 @@ Animator:
   m_GameObject: {fileID: 7820547215073884840}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 2732fe64dd2799f439fb845921df626b, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f3ee407ecb11a74091351825b10374c, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -2876,7 +2878,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   _icon: {fileID: 21300000, guid: dc98a28d01f02d14080334184a7c266f, type: 3}
-  _health: 100
+  _pivotPoint: {fileID: 0}
 --- !u!114 &7066607365066671630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2901,6 +2903,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c7e92a25bf93cf4a896c2fa28ceb095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stop: {fileID: 1724773880892673400}
+  _animator: {fileID: 5406312040014469647}
 --- !u!114 &7090322790545034359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2954,6 +2958,41 @@ MonoBehaviour:
   _renderers:
   - {fileID: 8827612625570528581}
   _outlineMaterial: {fileID: 2100000, guid: f5cb2d8259f1bc84794736e0147d6212, type: 2}
+--- !u!195 &7965128945968154032
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7820547215073884840}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.9
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &1724773880892673400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7820547215073884840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0b158240b12c5441a71c7ebb00cc93c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _agent: {fileID: 7965128945968154032}
 --- !u!1 &7852821811371597857
 GameObject:
   m_ObjectHideFlags: 0
